@@ -1,5 +1,11 @@
 <h1>Movies requested</h1>
-
+<ol>
 <% details['Search'].forEach(function(movie){ %>
-	<li><%= movie["Title"] %></li>
+	
+	<div style="display: inline;">
+		<img src=<%= movie["Poster"] %>>
+		<li><%= movie["Title"] %></li>
+	</div>
+	
 <% }) %>
+</ol>
